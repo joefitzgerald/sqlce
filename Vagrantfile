@@ -95,4 +95,23 @@ Vagrant.configure("2") do |config|
         "recipe[sqlce::default]"
     ]
   end
+  
+  config.vm.provider :virtualbox do |v, override|
+  end
+
+  config.vm.provider :vmware_fusion do |v, override|
+    v.gui = true
+    v.vmx["memsize"] = "2048"
+    v.vmx["ethernet0.virtualDev"] = "vmxnet3"
+    v.vmx["RemoteDisplay.vnc.enabled"] = "false"
+    v.vmx["RemoteDisplay.vnc.port"] = "5900"
+  end
+
+  config.vm.provider :vmware_workstation do |v, override|
+    v.gui = true
+    v.vmx["memsize"] = "2048"
+    v.vmx["ethernet0.virtualDev"] = "vmxnet3"
+    v.vmx["RemoteDisplay.vnc.enabled"] = "false"
+    v.vmx["RemoteDisplay.vnc.port"] = "5900"
+  end
 end
