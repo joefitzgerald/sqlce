@@ -1,4 +1,13 @@
-sqlce
-=====
+# sqlce cookbook
 
-Microsoft SQL Server (Compact Edition) Cookbook
+# Requirements
+
+# Usage
+
+# Attributes
+
+# Recipes
+
+# Author
+
+Author:: Joe Fitzgerald (<joe.fitzgerald@emc.com>)
