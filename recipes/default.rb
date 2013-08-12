@@ -30,5 +30,5 @@ windows_package node['sqlce']['4.0']['package_name'] do
   installer_type :custom
   options "/Q /I REBOOT=R"
   action :install
-  notifies :request, 'windows_reboot[5]'
+  notifies :request, "windows_reboot[5]"
 end
