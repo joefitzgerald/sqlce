@@ -24,7 +24,7 @@ if kernel['machine'] =~ /x86_64/
 else
   default['sqlce']['4.0']['url']          = "http://download.microsoft.com/download/F/F/D/FFDF76E3-9E55-41DA-A750-1798B971936C/ENU/SSCERuntime_x86-ENU.exe"
   default['sqlce']['4.0']['checksum']     = "eb463c0fededf177c9c28a5926d98b1bac957612679e3d4f0e9ad5ada10824e7"
-  default['sqlce']['4.0']['package_name'] = "Microsoft SQL Server Compact 4.0 SP1 x64 ENU"
+  default['sqlce']['4.0']['package_name'] = "Microsoft SQL Server Compact 4.0 SP1 ENU"
 end
 
 default['sqlce']['4.0']['home']    = "#{ENV['SYSTEMDRIVE']}\\Program Files\\Microsoft SQL Server Compact Edition\\v4.0"
