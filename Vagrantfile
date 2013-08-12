@@ -91,6 +91,8 @@ Vagrant.configure("2") do |config|
     #  }
     #}
 
+    chef.file_cache_path = "c:/chef/cache"
+    chef.file_backup_path = "c:/chef/backup"
     chef.run_list = [
         "recipe[sqlce::default]"
     ]
