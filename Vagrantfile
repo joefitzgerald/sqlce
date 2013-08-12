@@ -90,7 +90,7 @@ Vagrant.configure("2") do |config|
     #    :server_repl_password => 'replpass'
     #  }
     #}
-
+    chef.log_level = :debug
     chef.file_cache_path = "c:/chef/cache"
     chef.file_backup_path = "c:/chef/backup"
     chef.run_list = [

@@ -16,6 +16,8 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
+include_recipe 'windows::reboot_handler'
+node.default[:windows][:allow_pending_reboots] = true
 
 windows_reboot 5 do
   reason 'SQL CE 4.0 SP1 Install Complete'
