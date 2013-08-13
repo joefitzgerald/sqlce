@@ -96,6 +96,7 @@ Vagrant.configure("2") do |config|
     chef.add_recipe "windows::default"
     chef.add_recipe "windows::reboot_handler"
     chef.add_recipe "sqlce::default"
+    chef.add_recipe "minitest-handler"
   end
   
   config.vm.provider :virtualbox do |v, override|
