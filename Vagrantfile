@@ -93,9 +93,9 @@ Vagrant.configure("2") do |config|
     chef.log_level = :debug
     chef.file_cache_path = "c:/chef/cache"
     chef.file_backup_path = "c:/chef/backup"
-    chef.run_list = [
-        "recipe[sqlce::default]"
-    ]
+    chef.add_recipe "windows::default"
+    chef.add_recipe "windows::reboot_handler"
+    chef.add_recipe "sqlce::default"
   end
   
   config.vm.provider :virtualbox do |v, override|
