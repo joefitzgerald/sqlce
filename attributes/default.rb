@@ -17,7 +17,7 @@
 # limitations under the License.
 #
 
-if kernel['machine'] =~ /x86_64/
+if node['kernel']['machine'] =~ /x86_64/
   default['sqlce']['4.0']['url']          = "http://download.microsoft.com/download/F/F/D/FFDF76E3-9E55-41DA-A750-1798B971936C/ENU/SSCERuntime_x64-ENU.exe"
   default['sqlce']['4.0']['checksum']     = "29e5ff4b478cd6709ac2a0d4a5e065ccec14e5b7b972b6afc852b498c03c40d0"
   default['sqlce']['4.0']['package_name'] = "Microsoft SQL Server Compact 4.0 SP1 x64 ENU"
